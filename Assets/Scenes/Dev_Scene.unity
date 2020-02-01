@@ -1406,13 +1406,8 @@ MonoBehaviour:
   trashcan: {fileID: 0}
   condition: 100
   isActive: 0
-<<<<<<< HEAD
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 364851038}
-=======
-  prefabColor: {r: 1, g: 1, b: 1, a: 1}
-  paskaSaastaa: {fileID: 0}
->>>>>>> master
 --- !u!1 &1079748027
 GameObject:
   m_ObjectHideFlags: 0
@@ -2253,11 +2248,8 @@ MonoBehaviour:
   speed: 1000
   rotateSpeed: 5
   staminaRegenRate: 5
-<<<<<<< HEAD
   staminaBleedRate: 0.05
-=======
   progressSpeed: 10
->>>>>>> master
   currentStamina: 100
   currentPromille: 0
   currentProgress: 0
