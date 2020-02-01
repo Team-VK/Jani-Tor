@@ -6,10 +6,10 @@ public class CameraBehaviour : MonoBehaviour
 {
     public GameObject player;
     private Vector3 offset;
+    
     void Start()
     {
         offset = transform.position - player.transform.position;
-
     }
 
     // LateUpdate is called after Update each frame
