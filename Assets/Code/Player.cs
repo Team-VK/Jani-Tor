@@ -8,7 +8,8 @@ public class Player : MonoBehaviour
     private Rigidbody rigid;
     public float speed = 1000.0f;
     public float rotateSpeed = 5.0f;
-    public float staminaRegenRate = 5.0f;
+    public float staminaRegenRate = 0.1f;
+    public float staminaBleedRate = 0.05f;
     public float currentStamina = 100.0f;
     public float currentPromille = 0.0f;
     private Vector3 dir;
@@ -22,11 +23,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float delta = Time.deltaTime;
         maybeQuit();
         Vector3 movementVector = getMovementVector();
         handleMovemenent(movementVector);
         handleRotation(movementVector);
-        currentStamina -= 0.01f;
+        currentStamina -= staminaBleedRate * delta;
     }
 
     void handleMovemenent(Vector3 movement) 
@@ -39,7 +41,8 @@ public class Player : MonoBehaviour
         
         float rotationStep = rotateSpeed * Time.deltaTime;
         Vector3 targetDirection =  movement - transform.position;
-        if (Input.anyKey){
+        if (Input.anyKey)
+        {
             dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
         }
         transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
@@ -57,10 +60,18 @@ public class Player : MonoBehaviour
 
     void maybeQuit() 
     {
-        if (Input.GetKey ("escape")) {
+        if (Input.GetKey ("escape")) 
+        {
             Application.Quit();
         }
     }
+
+    void regenerateStamina(float rate)
+    {
+        float delta = Time.deltaTime;
+        currentStamina += rate * delta;
+        currentStamina = (currentStamina > 100f) ? 100f : currentStamina;
+    } 
 
 
     void OnCollisionEnter(Collision col)
@@ -70,8 +81,10 @@ public class Player : MonoBehaviour
         if (collidingObject.gameObject.tag.Equals("Talli"))
         {
             Debug.Log("Regenarating stamina");
-            
+            if (currentStamina < 100f)
+            {
+                regenerateStamina(staminaRegenRate);
+            }
         }
-
     }
 }
