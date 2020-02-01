@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     {
         maybeQuit();
         Vector3 movementVector = getMovementVector();
-        Debug.Log(movementVector);
         handleRotation(movementVector);
         handleMovemenent(movementVector);
     }
