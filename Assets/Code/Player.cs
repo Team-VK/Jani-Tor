@@ -20,8 +20,8 @@ public class Player : MonoBehaviour
     {
         maybeQuit();
         Vector3 movementVector = getMovementVector();
-        handleRotation(movementVector);
         handleMovemenent(movementVector);
+        handleRotation(movementVector);
     }
 
     void handleMovemenent(Vector3 movement) 
@@ -31,14 +31,12 @@ public class Player : MonoBehaviour
 
     void handleRotation(Vector3 movement) 
     {
-        // Do not rotate player if there is no movement
-        if (movement != Vector3.zero) 
-        {
-            Vector3 targetDirection =  movement - transform.position;
-            float singleStep = rotateSpeed * Time.deltaTime;
-            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newDirection, Vector3.up);
-        }
+        
+        float rotationStep = rotateSpeed * Time.deltaTime;
+        Vector3 targetDirection =  movement - transform.position;
+        Vector3 dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
+        transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+        Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
     }
 
     Vector3 getMovementVector() 
@@ -46,7 +44,8 @@ public class Player : MonoBehaviour
         float delta = Time.deltaTime;
         float xAxisValue = Input.GetAxis("Horizontal") * speed * delta;
         float zAxisValue = Input.GetAxis("Vertical") * speed * delta;
-        return new Vector3(xAxisValue, 0.0f, zAxisValue);
+        Debug.Log("Input values: " + xAxisValue + " " + zAxisValue);
+        return new Vector3(xAxisValue, 1.0f, zAxisValue);;
     }
 
     void maybeQuit() 
