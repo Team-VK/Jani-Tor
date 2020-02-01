@@ -386,18 +386,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
---- !u!4 &219041548 stripped
+--- !u!4 &219041548
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400040, guid: 340a62660342a06449a8eb76c71263ec,
     type: 3}
   m_PrefabInstance: {fileID: 219041547}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &219041549 stripped
+  m_GameObject: {fileID: 1956548848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2135259328}
+  m_Father: {fileID: 219041551}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &219041549
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 100040, guid: 340a62660342a06449a8eb76c71263ec,
     type: 3}
   m_PrefabInstance: {fileID: 219041547}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219041552}
+  - component: {fileID: 219041550}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!114 &219041550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,11 +433,55 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 484589908}
---- !u!4 &219041551 stripped
+--- !u!4 &219041551
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 219041547}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1914070421}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 219041552}
+  - {fileID: 484589906}
+  - {fileID: 219041548}
+  - {fileID: 1189609838}
+  - {fileID: 464977292}
+  m_Father: {fileID: 1668133268}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &219041552
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 219041549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 219041551}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &241691671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464977292}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &289303990
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,8 +492,9 @@ GameObject:
   m_Component:
   - component: {fileID: 289303991}
   - component: {fileID: 289303992}
+  - component: {fileID: 289303993}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: PromilleSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -501,6 +568,19 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &289303993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289303990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d1db3695d844fef8a57120e36e8a69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promilleMax: 100
 --- !u!1001 &339974680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -612,18 +692,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1412580946}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &464977292 stripped
+--- !u!4 &464977292
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 400016, guid: 340a62660342a06449a8eb76c71263ec,
     type: 3}
   m_PrefabInstance: {fileID: 219041547}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &484589905 stripped
+  m_GameObject: {fileID: 241691671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1182402844}
+  m_Father: {fileID: 219041551}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &484589905
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 100038, guid: 340a62660342a06449a8eb76c71263ec,
     type: 3}
   m_PrefabInstance: {fileID: 219041547}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 484589906}
+  - component: {fileID: 484589908}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &484589906
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484589905}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 219041551}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &484589908
 Animator:
   serializedVersion: 3
@@ -1348,8 +1464,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1158561622}
   - component: {fileID: 1158561623}
+  - component: {fileID: 1158561624}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: StaminaSlider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1423,6 +1540,18 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1158561624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158561621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17699b93619f348f685ba225f86f2c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1182402843
 GameObject:
   m_ObjectHideFlags: 0
@@ -1529,6 +1658,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb1c00c719f1441dae264be119a47ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1189609837
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1189609838}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1189609838
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189609837}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 219041551}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1291588309
 GameObject:
   m_ObjectHideFlags: 0
@@ -1823,6 +1982,8 @@ MonoBehaviour:
   speed: 1000
   rotateSpeed: 5
   staminaRegenRate: 5
+  currentStamina: 100
+  currentPromille: 0
 --- !u!54 &1668133270
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1911,6 +2072,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716830575}
   m_CullTransparentMesh: 0
+--- !u!1 &1914070421
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219041551}
+  m_Layer: 0
+  m_Name: Janitor2 (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1956548848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 219041547}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 219041548}
+  m_Layer: 0
+  m_Name: Missing Prefab (Dummy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &2049154180
 GameObject:
   m_ObjectHideFlags: 0
@@ -1920,6 +2113,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049154181}
+  - component: {fileID: 2049154182}
   m_Layer: 5
   m_Name: StaminaUI
   m_TagString: Untagged
@@ -1947,6 +2141,18 @@ RectTransform:
   m_AnchoredPosition: {x: -76, y: -19}
   m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2049154182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049154180}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17699b93619f348f685ba225f86f2c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2071512946
 GameObject:
   m_ObjectHideFlags: 0

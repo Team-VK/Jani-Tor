@@ -9,7 +9,8 @@ public class Player : MonoBehaviour
     public float speed = 1000.0f;
     public float rotateSpeed = 5.0f;
     public float staminaRegenRate = 5.0f;
-
+    public float currentStamina = 100.0f;
+    public float currentPromille = 0.0f;
     private Vector3 dir;
 
     // Start is called before the first frame update
@@ -25,6 +26,7 @@ public class Player : MonoBehaviour
         Vector3 movementVector = getMovementVector();
         handleMovemenent(movementVector);
         handleRotation(movementVector);
+        currentStamina -= 0.01f;
     }
 
     void handleMovemenent(Vector3 movement) 
