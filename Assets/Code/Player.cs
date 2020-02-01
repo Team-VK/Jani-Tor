@@ -10,8 +10,10 @@ public class Player : MonoBehaviour
     public float rotateSpeed = 5.0f;
     public float staminaRegenRate = 0.1f;
     public float staminaBleedRate = 0.05f;
+    public float progressSpeed = 1.0f;
     public float currentStamina = 100.0f;
     public float currentPromille = 0.0f;
+    public float currentProgress = 0.0f;
     private Vector3 dir;
 
     // Start is called before the first frame update
@@ -29,8 +31,14 @@ public class Player : MonoBehaviour
         handleMovemenent(movementVector);
         handleRotation(movementVector);
         currentStamina -= staminaBleedRate * delta;
+        actionProgress(progressSpeed);
     }
 
+    void actionProgress(float progressSpeed){
+        if (Input.GetKey("space")){
+            currentProgress += progressSpeed;
+        }
+    }
     void handleMovemenent(Vector3 movement) 
     {
         rigid.AddForce(movement);
