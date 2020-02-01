@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     public float rotateSpeed = 5.0f;
     public float staminaRegenRate = 5.0f;
 
+    private Vector3 dir;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +37,9 @@ public class Player : MonoBehaviour
         
         float rotationStep = rotateSpeed * Time.deltaTime;
         Vector3 targetDirection =  movement - transform.position;
-        Vector3 dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
+        if (Input.anyKey){
+            dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
+        }
         transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
         Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
     }
