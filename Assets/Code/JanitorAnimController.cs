@@ -15,7 +15,7 @@ public class JanitorAnimController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("up"))
+        if (Input.GetKey("up") || Input.GetKey("down"))
         {
             animator.Play("Walk");
         }
@@ -25,7 +25,7 @@ public class JanitorAnimController : MonoBehaviour
             animator.Play("Swing");
         }
 
-        if (!Input.GetKey("up") && !Input.GetKey("space"))
+        if (!Input.GetKey("up") && !Input.GetKey("space") && !Input.GetKey("down"))
         {
             animator.Play("Idle");
         }
