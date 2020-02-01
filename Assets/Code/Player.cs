@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Rigidbody rigid;
     public float speed = 1000.0f;
     public float rotateSpeed = 5.0f;
+    public float staminaRegenRate = 5.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -53,5 +54,18 @@ public class Player : MonoBehaviour
         if (Input.GetKey ("escape")) {
             Application.Quit();
         }
+    }
+
+
+    void OnCollisionEnter(Collision col)
+    {
+        Rigidbody collidingObject = col.rigidbody;
+        Debug.Log(collidingObject.gameObject.tag);
+        if (collidingObject.gameObject.tag.Equals("Talli"))
+        {
+            Debug.Log("Regenarating stamina");
+            
+        }
+
     }
 }
