@@ -188,6 +188,78 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1668133268}
     m_Modifications:
+    - target: {fileID: 100002, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100012, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100016, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100018, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100020, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100022, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100024, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100026, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100028, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100030, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100032, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100034, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
+    - target: {fileID: 100036, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
+      propertyPath: m_TagString
+      value: Bone
+      objectReference: {fileID: 0}
     - target: {fileID: 100040, guid: 340a62660342a06449a8eb76c71263ec, type: 3}
       propertyPath: m_Name
       value: Janitor2
@@ -611,17 +683,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: bush
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
+      propertyPath: m_TagString
+      value: Bush
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0013633473
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.001050523
+      value: -0.0011
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.04333333
+      value: 0.0245
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -669,6 +745,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
+--- !u!4 &339974681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2,
+    type: 3}
+  m_PrefabInstance: {fileID: 339974680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &339974682 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 4297297420a41714e8ba0a8c21bc4aa2,
+    type: 3}
+  m_PrefabInstance: {fileID: 339974680}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &339974683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339974682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa530b367eac94e3d8f64632468b3cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashcan: {fileID: 339974681}
+  condition: 100
+  isActive: 1
+--- !u!54 &339974684
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339974682}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!64 &339974685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339974682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
 --- !u!4 &445693490 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: a608eca134c79784285f7d092f6ee101,
@@ -1643,6 +1776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: wrench
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a608eca134c79784285f7d092f6ee101, type: 3}
+      propertyPath: m_TagString
+      value: Tool
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: a608eca134c79784285f7d092f6ee101, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.04
@@ -1876,7 +2013,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135259325}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &2135259327
 Camera:
   m_ObjectHideFlags: 0

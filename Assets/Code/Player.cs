@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
             dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
         }
         transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
-        Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
+        //Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
     }
 
     Vector3 getMovementVector() 
@@ -49,7 +49,7 @@ public class Player : MonoBehaviour
         float delta = Time.deltaTime;
         float xAxisValue = Input.GetAxis("Horizontal") * speed * delta;
         float zAxisValue = Input.GetAxis("Vertical") * speed * delta;
-        Debug.Log("Input values: " + xAxisValue + " " + zAxisValue);
+        //Debug.Log("Input values: " + xAxisValue + " " + zAxisValue);
         return new Vector3(xAxisValue, 1.0f, zAxisValue);;
     }
 

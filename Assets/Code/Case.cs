@@ -32,7 +32,7 @@ public class Case : MonoBehaviour
             this.isActive = true;
             time += Time.deltaTime / 1000f;  //To be used as a factor on condition decay to simulate faster decay as time passes
             this.condition -= (time * 1);
-            Debug.Log("My condition:" + this.condition.ToString());
+            //Debug.Log("My condition:" + this.condition.ToString());
             if(this.condition <= 0)
             {
                 Debug.Log("I AM DED");
@@ -61,6 +61,10 @@ public class Case : MonoBehaviour
                 if (isValidTool(this, collidingObject))
                 {
                     repairObject();
+                    if (this.gameObject.tag.Equals("Bush"))
+                    {
+                        cutBush();
+                    }
                 }
             }
         }
@@ -69,7 +73,17 @@ public class Case : MonoBehaviour
 
     private void repairObject() {
         this.condition += 5;
-        Debug.Log(this.condition);
+        //Debug.Log(this.condition);
+    }
+
+    private void cutBush()
+    {
+        Debug.Log("Cutting the bush");
+        Vector3 currentscale = this.gameObject.transform.localScale;
+        Vector3 newscale = new Vector3(currentscale.x - 0.1f, currentscale.y - 0.1f, currentscale.z - 0.1f);
+        //this.gameObject.transform.localScale.Set(0.2f, 0.2f, 0.2f);
+        this.transform.localScale = newscale;
+        //Debug.Log(this.condition);
     }
 
     private bool isValidTool(Case targetObject, Rigidbody collidingTool)
