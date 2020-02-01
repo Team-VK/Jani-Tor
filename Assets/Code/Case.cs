@@ -48,7 +48,6 @@ public class Case : MonoBehaviour
                     Destroy(paskaSaastaa);
                 }
             }
->>>>>>> master
             if(this.condition <= 0)
             {
                 Debug.Log("I AM DED");
@@ -67,7 +66,6 @@ public class Case : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        Debug.Log("GG");
         Rigidbody collidingObject = col.rigidbody;
         Debug.Log(collidingObject.gameObject.tag);
         if (collidingObject.gameObject.tag.Equals("Player"))
@@ -76,6 +74,8 @@ public class Case : MonoBehaviour
             {
                 if (isValidTool(this, collidingObject))
                 {
+                    this.transform.parent.GetComponent<Player>().currentProgress = this.condition;
+                    
                     repairObject();
                     if (this.gameObject.tag.Equals("Bush"))
                     {

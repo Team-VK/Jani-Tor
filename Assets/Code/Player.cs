@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public float currentStamina = 100.0f;
     public float currentPromille = 0.0f;
     public float currentProgress = 0.0f;
+    public float maxStamina = 100f;
     private Vector3 dir;
 
     // Start is called before the first frame update

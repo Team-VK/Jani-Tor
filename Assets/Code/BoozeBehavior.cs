@@ -5,15 +5,9 @@ using UnityEngine;
 public class BoozeBehavior : MonoBehaviour
 {
     // Start is called before the first frame update
-    public List<Vector3> spawnpoints;
-
     void Start()
     {
-        Vector3 spawnpoint1 = new Vector3(1, 2, 3);
-        Vector3 spawnpoint2 = new Vector3(1, 2, 3);
-        spawnpoints = new List<Vector3>();
-        spawnpoints.Add(spawnpoint1);
-        spawnpoints.Add(spawnpoint2);
+        
     }
 
     // Update is called once per frame
@@ -22,9 +16,15 @@ public class BoozeBehavior : MonoBehaviour
         
     }
 
-    void spawnBooze()
+    void OnCollisionEnter(Collision col)
     {
-        int random_spawnpoint = Random.Range(0, spawnpoints.Count-1);
+        Rigidbody collidingObject = col.rigidbody;
+        Debug.Log(collidingObject.gameObject.tag);
+        if (collidingObject.gameObject.tag.Equals("Player"))
+        {
+            this.transform.parent.GetComponent<Player>().currentStamina += 30;
+            this.transform.parent.GetComponent<Player>().maxStamina -= 15;
+        }
 
     }
 }
