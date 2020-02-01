@@ -8,6 +8,9 @@ TagManager:
   - Case
   - Tool
   - Talli
+  - Bush
+  - Bone
+  - Booze
   layers:
   - Default
   - TransparentFX

@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public float currentStamina = 100.0f;
     public float currentPromille = 0.0f;
     public float currentProgress = 0.0f;
+    public float maxStamina = 100f;
     private Vector3 dir;
 
     // Start is called before the first frame update
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
             dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
         }
         transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+        //Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
     }
 
     Vector3 getMovementVector() 
@@ -61,6 +63,7 @@ public class Player : MonoBehaviour
         float delta = Time.deltaTime;
         float xAxisValue = Input.GetAxis("Horizontal") * speed * delta;
         float zAxisValue = Input.GetAxis("Vertical") * speed * delta;
+        //Debug.Log("Input values: " + xAxisValue + " " + zAxisValue);
         return new Vector3(xAxisValue, 1.0f, zAxisValue);;
     }
 
