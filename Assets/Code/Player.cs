@@ -20,7 +20,6 @@ public class Player : MonoBehaviour
     {
         maybeQuit();
         Vector3 movementVector = getMovementVector();
-        Debug.Log(movementVector);
         handleMovemenent(movementVector);
         //handleRotation(movementVector);
 
@@ -29,7 +28,6 @@ public class Player : MonoBehaviour
     void handleMovemenent(Vector3 movement) 
     {
         var delta = Time.deltaTime;
-        Debug.Log("FORCE: " + movement);
         rigid.AddForce(movement);
         rigid.angularVelocity = Vector3.zero;
     }
@@ -65,12 +63,6 @@ public class Player : MonoBehaviour
         {
             y += transform.position.y - (speed * delta);
         }
-
-        Debug.Log("" 
-            + Input.GetKey(KeyCode.LeftArrow) + "-" 
-            + Input.GetKey(KeyCode.RightArrow) + "-"
-            + Input.GetKey(KeyCode.UpArrow) + "-"
-            + Input.GetKey(KeyCode.DownArrow));
 
         return new Vector3(x, 0f, y);
     }
