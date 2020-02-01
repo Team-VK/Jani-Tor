@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
         maybeQuit();
         Vector3 movementVector = getMovementVector();
         Debug.Log(movementVector);
-        //handleRotation(movementVector);
+        handleRotation(movementVector);
         handleMovemenent(movementVector);
     }
 
@@ -33,21 +33,13 @@ public class Player : MonoBehaviour
     void handleRotation(Vector3 movement) 
     {
         // Do not rotate player if there is no movement
-        //if (movement != Vector3.zero) 
-        //{
+        if (movement != Vector3.zero) 
+        {
             Vector3 targetDirection =  movement - transform.position;
-
-            // Determine which direction to rotate towards
-            //targetDirection.x = movement.x;
-            //targetDirection.z = movement.z;
-            // The step size is equal to speed times frame time.
             float singleStep = rotateSpeed * Time.deltaTime;
-            // Rotate the forward vector towards the target direction by one step
-            Vector3 newDirection = Vector3.RotateTowards(transform.position, targetDirection, singleStep, 0.0f);
-            // Calculate a rotation a step closer to the target and applies rotation to this object
-            transform.rotation = Quaternion.LookRotation(newDirection);
-            //transform.rotation = Quaternion.FromToRotation(movement, targetDirection);
-        //}
+            Vector3 newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
+            transform.rotation = Quaternion.LookRotation(newDirection, Vector3.up);
+        }
     }
 
     Vector3 getMovementVector() 
