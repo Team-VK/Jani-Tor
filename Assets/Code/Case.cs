@@ -10,6 +10,11 @@ public class Case : MonoBehaviour
     public bool isActive = false;
 
     private float time = 0f;
+    private bool particlesActivated = false;
+
+    public Color prefabColor = Color.white;
+
+    public GameObject paskaSaastaa;
     //public static List<ObjectDrag> draggableList = new List<ObjectDrag>();
 
     // Use this for initialization
@@ -33,6 +38,15 @@ public class Case : MonoBehaviour
             time += Time.deltaTime / 1000f;  //To be used as a factor on condition decay to simulate faster decay as time passes
             this.condition -= (time * 1);
             Debug.Log("My condition:" + this.condition.ToString());
+            if (this.condition <= 30 && !particlesActivated) {
+                var particles = GameObject.Instantiate(paskaSaastaa, this.transform.position, Quaternion.identity);
+                particles.GetComponent<Renderer>().material.color = prefabColor;
+            }
+            if (this.condition >= 30 && particlesActivated) {
+                if (paskaSaastaa != null) {
+                    Destroy(paskaSaastaa);
+                }
+            }
             if(this.condition <= 0)
             {
                 Debug.Log("I AM DED");
