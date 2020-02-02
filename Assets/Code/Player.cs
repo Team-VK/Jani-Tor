@@ -81,18 +81,22 @@ public class Player : MonoBehaviour
         currentStamina += rate * delta;
         currentStamina = (currentStamina > 100f) ? 100f : currentStamina;
         Debug.Log("Regenerating " + currentStamina);
-    } 
-
-
-    void OnCollisionEnter(Collision col)
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.gameObject.tag.Equals("Talli"))
+        {
+            Debug.Log("Collision with talli");
+            regenerateStamina(staminaRegenRate);
+        }
+    }
+    private void OnTriggerEnter(Collider other)
     {
 
-        if (col.gameObject.tag.Equals("Talli"))
+        if (other.gameObject.tag.Equals("Talli"))
         {
-            if (currentStamina < 100f)
-            {
-                regenerateStamina(staminaRegenRate);
-            }
+            Debug.Log("Collision with talli");
+            regenerateStamina(staminaRegenRate);
         }
     }
 }
