@@ -90,4 +90,10 @@ public class Player : MonoBehaviour
             regenerateStamina(staminaRegenRate);
         }
     }
+
+    private void OnCollisionEnter(Collision col)
+    {
+        rigid.velocity = Vector3.zero;
+        rigid.angularVelocity = Vector3.zero;
+    }
 }
