@@ -191,7 +191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -290,6 +290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
+      propertyPath: m_TagString
+      value: Bush
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.6
@@ -320,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_RootOrder
-      value: 21
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -500,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 37
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -835,6 +839,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 1558001839}
 --- !u!136 &220340400
@@ -908,7 +914,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &235080308
 PrefabInstance:
@@ -1229,7 +1235,7 @@ RectTransform:
   - {fileID: 622599481}
   - {fileID: 1320849697}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1277,7 +1283,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 37
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1365,7 +1371,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 31
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1501,8 +1507,10 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.05
+  growRate: 0.01
   growLimit: 2
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -1561,7 +1569,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 45
+      value: 44
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1634,7 +1642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 46
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1673,8 +1681,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.5
+  growRate: 0.01
   growLimit: 80
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -1832,7 +1843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 41
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2034,7 +2045,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 33
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2122,7 +2133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2246,7 +2257,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2528,7 +2539,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 47
+      value: 46
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2567,8 +2578,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.5
+  growRate: 0.01
   growLimit: 80
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -2665,7 +2679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 32
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2905,6 +2919,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -2943,7 +2959,7 @@ Transform:
   m_Children:
   - {fileID: 674620774}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &904644774
 GameObject:
@@ -3070,8 +3086,10 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.05
+  growRate: 0.01
   growLimit: 2
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -3186,7 +3204,7 @@ Transform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &964495126
 PrefabInstance:
@@ -3290,8 +3308,10 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.05
+  growRate: 0.01
   growLimit: 2
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -3350,7 +3370,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 36
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3467,7 +3487,7 @@ Transform:
   m_LocalScale: {x: 30, y: 0.1, z: 30}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1043948568 stripped
 GameObject:
@@ -3529,7 +3549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 30
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3598,7 +3618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 42
+      value: 41
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3637,6 +3657,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
+      propertyPath: m_TagString
+      value: Bush
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.2
@@ -3667,7 +3691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3721,6 +3745,31 @@ CapsuleCollider:
   m_Height: 0.013938557
   m_Direction: 1
   m_Center: {x: -0.0038076015, y: -0.0016265201, z: 0.026532808}
+--- !u!114 &1138040760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138040755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa530b367eac94e3d8f64632468b3cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashcan: {fileID: 0}
+  condition: 100
+  isActive: 0
+  repairRate: 5
+  scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
+  prefabColor: {r: 0.87058824, g: 0.84313726, b: 0.3254902, a: 1}
+  paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
 --- !u!1001 &1146831179
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3762,7 +3811,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3819,7 +3868,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3888,7 +3937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 35
+      value: 34
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3983,7 +4032,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1168684470 stripped
 GameObject:
@@ -4042,6 +4091,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4080,7 +4131,7 @@ Transform:
   m_Children:
   - {fileID: 1399691211}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1234107068
 PrefabInstance:
@@ -4169,6 +4220,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
+      propertyPath: m_TagString
+      value: Bush
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38.9
@@ -4199,7 +4254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0c48f20d73995c44d89df15fae233b98, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4253,6 +4308,31 @@ CapsuleCollider:
   m_Height: 0.013938557
   m_Direction: 1
   m_Center: {x: -0.0038076015, y: -0.0016265201, z: 0.026532808}
+--- !u!114 &1282232130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282232125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa530b367eac94e3d8f64632468b3cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashcan: {fileID: 0}
+  condition: 100
+  isActive: 0
+  repairRate: 5
+  scaleLimit: 50
+  growRate: 0.01
+  growLimit: 200
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
+  prefabColor: {r: 0.8679245, g: 0.83978957, b: 0.3234247, a: 1}
+  paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
 --- !u!1001 &1292399087
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4298,7 +4378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 48
+      value: 47
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4337,8 +4417,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.5
+  growRate: 0.01
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4397,7 +4480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 43
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4515,7 +4598,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 44
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4600,6 +4683,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4638,7 +4723,7 @@ Transform:
   m_Children:
   - {fileID: 322994162}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1399691211 stripped
 Transform:
@@ -4684,6 +4769,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4722,7 +4809,7 @@ Transform:
   m_Children:
   - {fileID: 201823024}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1418910548
 GameObject:
@@ -4762,6 +4849,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4800,7 +4889,7 @@ Transform:
   m_Children:
   - {fileID: 492061113}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1436664143
 PrefabInstance:
@@ -4847,7 +4936,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 49
+      value: 48
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4886,8 +4975,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.5
+  growRate: 0.01
   growLimit: 80
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4986,6 +5078,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 101630566}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1534700186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534700181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa530b367eac94e3d8f64632468b3cda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trashcan: {fileID: 0}
+  condition: 100
+  isActive: 0
+  repairRate: 5
+  scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
+  prefabColor: {r: 0.87058824, g: 0.84313726, b: 0.3254902, a: 1}
+  paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
 --- !u!1001 &1558001838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5041,7 +5158,7 @@ PrefabInstance:
     - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
         type: 3}
@@ -5113,7 +5230,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 39
+      value: 38
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5201,7 +5318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 40
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5261,15 +5378,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.477
+      value: 14.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.111
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.001
+      value: 18.3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_LocalRotation.x
@@ -5289,7 +5406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30532efdb2588b04380629cfe44c3cad, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5516,7 +5633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_RootOrder
-      value: 50
+      value: 49
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5555,8 +5672,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.5
+  growRate: 0.01
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -5615,7 +5735,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5771,7 +5891,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_RootOrder
-      value: 34
+      value: 33
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 79046cdaba0e5f046b97906313e53e77, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5879,8 +5999,11 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
-  growRate: 0.05
+  growRate: 0.01
   growLimit: 80
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 7948263691061143067, guid: 9291ee810e64f4312a28ad9edc2f2d72,
+    type: 3}
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -5996,7 +6119,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6050,6 +6173,8 @@ MonoBehaviour:
   scaleLimit: 50
   growRate: 0.5
   growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -6088,7 +6213,7 @@ Transform:
   m_Children:
   - {fileID: 2139502187}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1942685892
 PrefabInstance:
@@ -6131,7 +6256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6354,6 +6479,8 @@ GameObject:
   - component: {fileID: 2019609840}
   - component: {fileID: 2019609839}
   - component: {fileID: 2019609838}
+  - component: {fileID: 2019609842}
+  - component: {fileID: 2019609841}
   - component: {fileID: 2019609837}
   - component: {fileID: 2019609836}
   - component: {fileID: 2019609835}
@@ -6472,8 +6599,37 @@ Transform:
   m_Children:
   - {fileID: 793550617}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019609841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019609834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6d7c02acfcef4b2fadebfb1f6b8a7e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnpoints: []
+  boozebottle: {fileID: 5720239029630000662, guid: 99948f1b066d44a70b219103e63e6ac0,
+    type: 3}
+  maxBottles: 5
+--- !u!114 &2019609842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019609834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17699b93619f348f685ba225f86f2c9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  staminaMax: 100
 --- !u!1 &2034845102 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 79046cdaba0e5f046b97906313e53e77,
@@ -6591,7 +6747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6607,63 +6763,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30be092a13c117149868961ea8fd9e40, type: 3}
---- !u!1001 &2069030093
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_Name
-      value: trash
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 15.75
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.013828989
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -22.615845
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071067
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
 --- !u!1 &2091564177 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
