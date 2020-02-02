@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/SplashScreen.unity
+    guid: 2de3ac7a716094a7dbc175a2c59ccbc5
+  - enabled: 1
+    path: Assets/Scenes/Bridgehill.unity
+    guid: c0795d8389afd974ea33c2427bde4a0e
+  - enabled: 1
+    path: Assets/Scenes/Mjaho_dev_scene.unity
+    guid: 804afeb727efc4222a46d5f3198bbc09
   m_configObjects: {}
