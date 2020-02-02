@@ -40,6 +40,7 @@ public class Player : MonoBehaviour
             currentProgress += progressSpeed;
         }
     }
+    
     void handleMovemenent(Vector3 movement) 
     {
         rigid.AddForce(movement);
@@ -47,7 +48,6 @@ public class Player : MonoBehaviour
 
     void handleRotation(Vector3 movement) 
     {
-        
         float rotationStep = rotateSpeed * Time.deltaTime;
         Vector3 targetDirection =  movement - transform.position;
         if (Input.anyKey)
@@ -55,7 +55,6 @@ public class Player : MonoBehaviour
             dir = Vector3.RotateTowards(transform.forward, targetDirection, rotationStep, 0.0f);
         }
         transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
-        //Debug.Log("Movement: " + movement + " rotation: " + transform.rotation);
     }
 
     Vector3 getMovementVector() 
@@ -63,7 +62,6 @@ public class Player : MonoBehaviour
         float delta = Time.deltaTime;
         float xAxisValue = Input.GetAxis("Horizontal") * speed * delta;
         float zAxisValue = Input.GetAxis("Vertical") * speed * delta;
-        //Debug.Log("Input values: " + xAxisValue + " " + zAxisValue);
         return new Vector3(xAxisValue, 1.0f, zAxisValue);;
     }
 
@@ -82,17 +80,9 @@ public class Player : MonoBehaviour
         currentStamina = (currentStamina > 100f) ? 100f : currentStamina;
         Debug.Log("Regenerating " + currentStamina);
     }
+
     private void OnTriggerStay(Collider other)
     {
-        if (other.gameObject.tag.Equals("Talli"))
-        {
-            Debug.Log("Collision with talli");
-            regenerateStamina(staminaRegenRate);
-        }
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-
         if (other.gameObject.tag.Equals("Talli"))
         {
             Debug.Log("Collision with talli");
