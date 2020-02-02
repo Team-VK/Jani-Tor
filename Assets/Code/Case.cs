@@ -10,6 +10,8 @@ public class Case : MonoBehaviour
     public bool isActive = false;
     public float repairRate = 5f;
     public float scaleLimit = 50;
+    public float growRate = 0.5f;
+    public float growLimit = 250;
 
     private float time = 0f;
     private bool particlesActivated = false;
@@ -60,6 +62,10 @@ public class Case : MonoBehaviour
                 Debug.Log("I AM DED");
                 Destroy(this.gameObject);
             }
+            if(this.gameObject.tag.Equals("Bush"))
+            {
+                growBush();
+            }
         }
         //float rnd = Random.Range(0f, 1f);
         // Odds of spawning a new case increses as the game goes on
@@ -99,6 +105,19 @@ public class Case : MonoBehaviour
     private void repairObject() {
         this.condition += 5;
         //Debug.Log(this.condition);
+    }
+
+    private void growBush()
+    {
+
+        Vector3 currentscale = this.gameObject.transform.localScale;
+        Vector3 newscale = new Vector3(currentscale.x + growRate, currentscale.y + growRate, currentscale.z + growRate);
+        //this.gameObject.transform.localScale.Set(0.2f, 0.2f, 0.2f);
+
+        if (currentscale.x < growLimit && currentscale.y < growLimit && currentscale.z < growLimit)
+        {
+            this.gameObject.transform.localScale = newscale;
+        }
     }
 
     private void cutBush()
