@@ -8,7 +8,8 @@ public class Case : MonoBehaviour
     public Transform trashcan;
     public float condition = 100;
     public bool isActive = false;
-    public int maxBottles = 3;
+    public float repairRate = 5f;
+    public float scaleLimit = 50;
 
     private float time = 0f;
     private bool particlesActivated = false;
@@ -75,10 +76,12 @@ public class Case : MonoBehaviour
             {
                 if (isValidTool(this, collidingObject))
                 {
-                    this.transform.parent.GetComponent<Player>().currentProgress = this.condition;
-                    
+                    GameObject player = GameObject.Find("Pelaaja");
+                    Player playerScript = player.GetComponent<Player>();
+                    playerScript.currentProgress = this.condition;
+
                     repairObject();
-                    if (this.gameObject.tag.Equals("Bush"))
+                    if (this.gameObject.tag.Equals("Bush") || this.gameObject.tag.Equals("Trunk"))
                     {
                         cutBush();
                     }
@@ -96,10 +99,26 @@ public class Case : MonoBehaviour
     private void cutBush()
     {
         Debug.Log("Cutting the bush");
-        Vector3 currentscale = this.gameObject.transform.localScale;
-        Vector3 newscale = new Vector3(currentscale.x - 0.1f, currentscale.y - 0.1f, currentscale.z - 0.1f);
+        GameObject objectToCut;
+
+        if (this.gameObject.tag.Equals("Trunk"))
+        {
+            objectToCut = this.transform.parent.gameObject;
+            Debug.Log("Cutting via trunk");
+        } else
+        {
+            objectToCut = this.gameObject;
+            Debug.Log("Cutting via bush");
+        }
+
+        Vector3 currentscale = objectToCut.transform.localScale;
+        Vector3 newscale = new Vector3(currentscale.x - repairRate, currentscale.y - repairRate, currentscale.z - repairRate);
         //this.gameObject.transform.localScale.Set(0.2f, 0.2f, 0.2f);
-        this.transform.localScale = newscale;
+
+        if (currentscale.x > scaleLimit && currentscale.y > scaleLimit && currentscale.z > scaleLimit && !this.gameObject.tag.Equals("Trunk"))
+        {
+            objectToCut.transform.localScale = newscale;
+        }
         //Debug.Log(this.condition);
     }
 
