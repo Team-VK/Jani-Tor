@@ -8,6 +8,7 @@ public class Case : MonoBehaviour
     public Transform trashcan;
     public float condition = 100;
     public bool isActive = false;
+    public int maxBottles = 3;
 
     private float time = 0f;
     private bool particlesActivated = false;

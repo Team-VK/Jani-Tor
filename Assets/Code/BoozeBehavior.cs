@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BoozeBehavior : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +16,34 @@ public class BoozeBehavior : MonoBehaviour
     {
         
     }
-
+    private void OnCollisionStay(Collision col)
+    {
+        Rigidbody collidingObject = col.rigidbody;
+        Debug.Log("Booze bottle colliding with: " + collidingObject.gameObject.tag);
+        if (collidingObject.gameObject.tag.Equals("Player") ||
+            collidingObject.gameObject.tag.Equals("Tool") ||
+            collidingObject.gameObject.tag.Equals("Bone"))
+        {
+            GameObject player = GameObject.Find("Pelaaja");
+            Player playerScript = player.GetComponent<Player>();
+            playerScript.currentStamina += 30;
+            playerScript.maxStamina -= 15;
+            Destroy(this.gameObject);
+        }
+    }
     void OnCollisionEnter(Collision col)
     {
         Rigidbody collidingObject = col.rigidbody;
-        Debug.Log(collidingObject.gameObject.tag);
-        if (collidingObject.gameObject.tag.Equals("Player"))
+        Debug.Log("Booze bottle colliding with: "+collidingObject.gameObject.tag);
+        if (collidingObject.gameObject.tag.Equals("Player") ||
+            collidingObject.gameObject.tag.Equals("Tool") ||
+            collidingObject.gameObject.tag.Equals("Bone"))
         {
-            this.transform.parent.GetComponent<Player>().currentStamina += 30;
-            this.transform.parent.GetComponent<Player>().maxStamina -= 15;
+            GameObject player = GameObject.Find("Pelaaja");
+            Player playerScript = player.GetComponent<Player>();
+            playerScript.currentStamina += 30;
+            playerScript.maxStamina -= 15;
+            Destroy(this.gameObject);
         }
 
     }

@@ -7,11 +7,12 @@ public class BoozeController : MonoBehaviour
     // Start is called before the first frame update
     public List<Vector3> spawnpoints;
     public GameObject boozebottle;
+    public int maxBottles = 3;
 
     void Start()
     {
         Vector3 spawnpoint1 = new Vector3(1, 2, 3);
-        Vector3 spawnpoint2 = new Vector3(1, 2, 3);
+        Vector3 spawnpoint2 = new Vector3(5, 2, 5);
         spawnpoints = new List<Vector3>();
         spawnpoints.Add(spawnpoint1);
         spawnpoints.Add(spawnpoint2);
@@ -21,7 +22,9 @@ public class BoozeController : MonoBehaviour
     void Update()
     {
         int booze_rng = Random.Range(0, 10000);
-        if (booze_rng <= 100)
+        GameObject[] bottles = GameObject.FindGameObjectsWithTag("Booze");
+        
+        if (booze_rng <= 100 && bottles.Length < maxBottles)
         {
             spawnBooze();
         }
