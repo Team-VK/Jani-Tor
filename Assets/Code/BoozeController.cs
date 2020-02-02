@@ -7,15 +7,25 @@ public class BoozeController : MonoBehaviour
     // Start is called before the first frame update
     public List<Vector3> spawnpoints;
     public GameObject boozebottle;
-    public int maxBottles = 3;
+    public int maxBottles = 5;
 
     void Start()
     {
-        Vector3 spawnpoint1 = new Vector3(1, 2, 3);
-        Vector3 spawnpoint2 = new Vector3(5, 2, 5);
+        Vector3 spawnpoint1 = new Vector3(7, 1, 8);
+        Vector3 spawnpoint2 = new Vector3(-30, 1, 24);
+        Vector3 spawnpoint3 = new Vector3(-6, 1, 50);
+        Vector3 spawnpoint4 = new Vector3(-16, 1, -40);
+        Vector3 spawnpoint5 = new Vector3(-55, 1, 4);
+
+
         spawnpoints = new List<Vector3>();
         spawnpoints.Add(spawnpoint1);
         spawnpoints.Add(spawnpoint2);
+        spawnpoints.Add(spawnpoint3);
+        spawnpoints.Add(spawnpoint4);
+        spawnpoints.Add(spawnpoint5);
+
+
     }
 
     // Update is called once per frame
