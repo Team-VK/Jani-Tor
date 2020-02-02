@@ -833,6 +833,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 1558001839}
 --- !u!136 &220340400
@@ -1499,6 +1501,8 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.05
+  growLimit: 2
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -1669,6 +1673,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 80
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -2561,6 +2567,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 80
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -2895,6 +2903,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -3060,6 +3070,8 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.05
+  growLimit: 2
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -3278,6 +3290,8 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.05
+  growLimit: 2
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4026,6 +4040,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4321,6 +4337,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4580,6 +4598,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4662,6 +4682,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4738,6 +4760,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -4862,6 +4886,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 80
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -5529,6 +5555,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -5851,6 +5879,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.05
+  growLimit: 80
   prefabColor: {r: 0.114498034, g: 0.7830189, b: 0.17583062, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -6018,6 +6048,8 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
