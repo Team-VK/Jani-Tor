@@ -226,7 +226,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.6749997
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -307,6 +307,11 @@ MonoBehaviour:
   isActive: 1
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -665,6 +670,90 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 605037712}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &655556676
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5220553347599015957, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220553347599015957, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5220553347599015957, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8827127999111305435, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1c1a0cabaf817776bb55bbcac31c45c9, type: 3}
 --- !u!1 &697570315
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,6 +892,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cb1c00c719f1441dae264be119a47ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabColor: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 921320688}
 --- !u!136 &749689462
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -934,6 +1025,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774820063}
   m_CullTransparentMesh: 0
+--- !u!1 &921320688 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 655556676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1156524701
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,7 +1629,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 1
   m_AngularDrag: 0.1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -1993,6 +2090,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1793137708}
+--- !u!1 &1974906301 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: a608eca134c79784285f7d092f6ee101,
+    type: 3}
+  m_PrefabInstance: {fileID: 605037712}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1974906304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974906301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb1c00c719f1441dae264be119a47ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabColor: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
+    type: 3}
+--- !u!136 &1974906305
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974906301}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.07855518
+  m_Height: 0.005942877
+  m_Direction: 1
+  m_Center: {x: 0.00019763898, y: 0.000000044369038, z: 0.049459763}
 --- !u!1 &2118626716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2030,6 +2162,10 @@ MonoBehaviour:
   isActive: 0
   repairRate: 5
   scaleLimit: 50
+  growRate: 0.5
+  growLimit: 250
+  prefabColor2: {r: 0, g: 1, b: 0, a: 1}
+  leafEffect: {fileID: 0}
   prefabColor: {r: 1, g: 1, b: 1, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}

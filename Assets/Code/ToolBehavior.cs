@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class ToolBehavior : MonoBehaviour
 {
+
+    public Color prefabColor = Color.green;
+    public GameObject leafEffect;
+    private GameObject leafEffectInstance;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +20,23 @@ public class ToolBehavior : MonoBehaviour
     {
         
     }
-}
+
+    void OnCollisionStay(Collision col)
+    {
+        Debug.Log("Tool collision detected");
+
+        if (col.gameObject.tag.Equals("Bush"))
+        {
+
+            Debug.Log("Tool colliding with bush");
+            leafEffectInstance = GameObject.Instantiate(
+                    leafEffect,
+                    this.transform.position,
+                    this.transform.rotation
+            );
+        }
+
+    }
+
+
+    }

@@ -13,6 +13,10 @@ public class Case : MonoBehaviour
     public float growRate = 0.5f;
     public float growLimit = 250;
 
+    public Color prefabColor2 = Color.green;
+    public GameObject leafEffect;
+    private GameObject leafEffectInstance;
+
     private float time = 0f;
     private bool particlesActivated = false;
 
@@ -143,6 +147,14 @@ public class Case : MonoBehaviour
         {
             objectToCut.transform.localScale = newscale;
         }
+
+        leafEffectInstance = GameObject.Instantiate(
+        leafEffect,
+        this.transform.position,
+        this.transform.rotation
+        );
+        leafEffectInstance.GetComponent<Renderer>().material.color = prefabColor2;
+        Destroy(leafEffectInstance, 10f);
         //Debug.Log(this.condition);
     }
 
