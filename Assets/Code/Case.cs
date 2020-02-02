@@ -54,7 +54,9 @@ public class Case : MonoBehaviour
                         this.transform.position, 
                         this.transform.rotation
                 );
+                particlesActivated = true;
                 paskaSaastaaInstance.GetComponent<Renderer>().material.color = prefabColor;
+                paskaSaastaaInstance.GetComponent<ParticleSystem>().maxParticles = 50;
             }
             if (this.condition >= 30 && particlesActivated) {
                 if (paskaSaastaaInstance != null) {
