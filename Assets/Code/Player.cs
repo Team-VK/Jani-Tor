@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     void handleMovemenent(Vector3 movement) 
     {
         rigid.AddForce(movement);
+        transform.position = new Vector3(transform.position.x, 0.3f, transform.position.z); ;
     }
 
     void handleRotation(Vector3 movement) 
@@ -62,7 +63,7 @@ public class Player : MonoBehaviour
         float delta = Time.deltaTime;
         float xAxisValue = Input.GetAxis("Horizontal") * speed * delta;
         float zAxisValue = Input.GetAxis("Vertical") * speed * delta;
-        return new Vector3(xAxisValue, 1.0f, zAxisValue);;
+        return new Vector3(xAxisValue, 1.25f, zAxisValue);;
     }
 
     void maybeQuit() 

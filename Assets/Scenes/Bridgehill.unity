@@ -427,6 +427,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 107946920}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &149573411 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1918993852}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &149573415
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149573411}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!1 &156435036
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +553,8 @@ MonoBehaviour:
   trashcan: {fileID: 0}
   condition: 100
   isActive: 0
-  maxBottles: 3
+  repairRate: 5
+  scaleLimit: 50
   prefabColor: {r: 0.6509434, g: 0.3727122, b: 0, a: 1}
   paskaSaastaa: {fileID: 1558001839}
 --- !u!136 &220340400
@@ -1020,7 +1040,8 @@ MonoBehaviour:
   trashcan: {fileID: 335407578}
   condition: 100
   isActive: 1
-  maxBottles: 3
+  repairRate: 5
+  scaleLimit: 50
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -1038,6 +1059,25 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 4300000, guid: 4297297420a41714e8ba0a8c21bc4aa2, type: 3}
+--- !u!1 &384678424 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1146831179}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &384678428
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384678424}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!1001 &408636465
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1167,6 +1207,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 434130669}
   m_CullTransparentMesh: 0
+--- !u!1 &470251476 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 622868487}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &470251480
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470251476}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!1 &484467815
 GameObject:
   m_ObjectHideFlags: 0
@@ -1467,6 +1526,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690609367}
   m_CullTransparentMesh: 0
+--- !u!1 &734789112 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 67196140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &734789116
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734789112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!1 &734824065 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100038, guid: 340a62660342a06449a8eb76c71263ec,
@@ -1789,7 +1867,8 @@ MonoBehaviour:
   trashcan: {fileID: 921768097}
   condition: 100
   isActive: 1
-  maxBottles: 3
+  repairRate: 5
+  scaleLimit: 50
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -1987,7 +2066,8 @@ MonoBehaviour:
   trashcan: {fileID: 964495127}
   condition: 100
   isActive: 1
-  maxBottles: 3
+  repairRate: 5
+  scaleLimit: 50
   prefabColor: {r: 0.069993824, g: 0.7264151, b: 0.023985418, a: 1}
   paskaSaastaa: {fileID: 5626241296005099663, guid: 1c1a0cabaf817776bb55bbcac31c45c9,
     type: 3}
@@ -2575,6 +2655,25 @@ CanvasGroup:
   m_Interactable: 0
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
+--- !u!1 &1350737589 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 2056797769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1350737593
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350737589}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!4 &1417430921 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9,
@@ -3422,13 +3521,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019609834}
   serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 1
-  m_AngularDrag: 0.1
-  m_UseGravity: 1
+  m_Mass: 15
+  m_Drag: 5
+  m_AngularDrag: 0.01
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 0
 --- !u!114 &2019609836
 MonoBehaviour:
@@ -3442,7 +3541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60b5c289767612726b597bf8a592149b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1000
+  speed: 10000
   rotateSpeed: 5
   staminaRegenRate: 5
   staminaBleedRate: 0.05
@@ -3462,8 +3561,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.5, z: 1}
+  m_Center: {x: 0, y: 1.25, z: 0}
 --- !u!23 &2019609838
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3517,7 +3616,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2019609834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -14.04}
+  m_LocalPosition: {x: 0, y: 0.3, z: -14.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 793550617}
@@ -3638,6 +3737,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
+--- !u!1 &2091564177 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1819978828}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2091564181
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091564177}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
 --- !u!1 &2093479483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3801,3 +3919,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b48f9ab403eb00409c1d6f0a536cfc9, type: 3}
+--- !u!1 &2131587265 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 30be092a13c117149868961ea8fd9e40,
+    type: 3}
+  m_PrefabInstance: {fileID: 1942685892}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2131587269
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131587265}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.14053643, y: 0.13987955, z: 0.11973586}
+  m_Center: {x: 0, y: -0.00006174252, z: 0.059983656}
