@@ -16,6 +16,7 @@ public class Case : MonoBehaviour
     public Color prefabColor = Color.white;
 
     public GameObject paskaSaastaa;
+    private GameObject paskaSaastaaInstance;
     //public static List<ObjectDrag> draggableList = new List<ObjectDrag>();
 
     // Use this for initialization
@@ -41,12 +42,16 @@ public class Case : MonoBehaviour
 
             //Debug.Log("My condition:" + this.condition.ToString());
             if (this.condition <= 30 && !particlesActivated) {
-                var particles = GameObject.Instantiate(paskaSaastaa, this.transform.position, Quaternion.identity);
-                particles.GetComponent<Renderer>().material.color = prefabColor;
+                paskaSaastaaInstance = GameObject.Instantiate(
+                        paskaSaastaa, 
+                        this.transform.position, 
+                        this.transform.rotation
+                );
+                paskaSaastaaInstance.GetComponent<Renderer>().material.color = prefabColor;
             }
             if (this.condition >= 30 && particlesActivated) {
-                if (paskaSaastaa != null) {
-                    Destroy(paskaSaastaa);
+                if (paskaSaastaaInstance != null) {
+                    Destroy(paskaSaastaaInstance);
                 }
             }
             if(this.condition <= 0)
